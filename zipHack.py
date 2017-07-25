@@ -26,3 +26,4 @@ if __name__ == '__main__':
     dictionary=args.d
     Zip=args.z
     main(dictionary,Zip)
+ 
