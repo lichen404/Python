@@ -33,7 +33,7 @@ def Getphoto(ID):
     else:
         print(Rawcontent.status_code)
 if __name__ == '__main__':
-	Getphoto('20151601****') #此处输入要查询的学号
+	Getphoto('20151601****')  #此处输入要查询的学号
 
 
 
