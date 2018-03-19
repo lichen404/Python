@@ -3,3 +3,4 @@
 * **kd100.py**               快递100网站查快递API
 * **zipHack.py**            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;zip文件的多线程暴力字典破解 
 * **GetPhoto.py**        只需学号查看教务系统照片
+* **1-5.py**             &nbsp;&nbsp;&nbsp;黑板课爬虫闯关
