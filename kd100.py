@@ -17,25 +17,33 @@ def kd100_query(code,company=None):
         for p in company_possible:
             f=urllib.request.urlopen(query.format(p,code))
             content=json.loads(f.read().decode('utf-8'))
-            try:
-                for x in content['data']:
-                    time=x['time']
-                    context=x['context']
-                    location=x['location']
-                    print(time,context)
-            except:
-                pass
+            if content['com'] != '':
+                try:
+                    print(content['com'])
+                    print('-'*40)
+                    for x in content['data']:
+                        time=x['time']
+                        context=x['context']
+                        location=x['location']
+                        print(time,context)
+                    print('-'*40)
+                except:
+                    pass
         
     else:
         company=str(company)
         f=urllib.request.urlopen(query.format(company,code))
         content=json.loads(f.read().decode('utf-8'))
         try:
+            print(content['com'])
+            print('-'*40)
+           
             for x in content['data']:
                 time=x['time']
                 context=x['context']
                 location=x['location']
                 print(time,context)
+            print('-'*40)
             if int(content['status']) != 200:
                 print('the company\'s name  may be wrong')
         except:
@@ -58,6 +66,16 @@ if __name__=='__main__':
         
         
         
+        
+            
+              
+       
+    
+
+
+        
+
+
         
             
               
